@@ -1,0 +1,69 @@
+ 26  cd workspace-spring-tool-suite-4-4.6.2.RELEASE/FileCountToELK/
+   27  git clone https://github.com/gwengopi/ELKLearn.git
+   28  git status
+   29  git init
+   30  git status
+   31  cd ELKLearn/
+   32  git status
+   33  git status
+   34  cd ..
+   35  cd ..
+   36  git status
+   37  git init
+   38  git status
+   39  git add FileCountToELK/
+   40  git add FileCountToELK
+   41  cd FileCountToELK/
+   42  git push
+   43  git remote add ELKLearn https://github.com/gwengopi/ELKLearn.git
+   44  git push
+   45  git remote help
+   46  pwd
+   47  cd C:\Users\gopinath.palani\Documents\workspace-spring-tool-suite-4-4.6.2.RELEASE\SpringSecurity
+   48  cd \Documents\workspace-spring-tool-suite-4-4.6.2.RELEASE\SpringSecurity
+   49  cd Documents/workspace-spring-tool-suite-4-4.6.2.RELEASE/SpringSecurity/
+   50  git branch
+   51  git checkout -b spring_dev
+   52  git branch
+   53  git status
+   54  cd ..
+   55  git status
+   56  cd SpringSecurity/
+   57  git status
+   58  git add ./
+   59  git status
+   60  git push
+   61  git remote add main https://github.com/gwengopi/SpringBoot_Security.git
+   62  git push spring_security
+   63  git push --set-upstream spring_security spring_dev
+   64  git remote add SpringBoot_Security https://github.com/gwengopi/SpringBoot_Security.git
+   65  git push --set-upstream SpringBoot_Security spring_dev
+   66  git push
+   67  git push spring_dev
+   68  git clone https://github.com/gwengopi/SpringBoot_Security.git
+   69  git config --global http.sslVerify false
+   70  git clone https://github.com/gwengopi/SpringBoot_Security.git
+   71  git status
+   72  git commit -m "Spring security learn - spring security dependency added and checked configure method of WebSecurityConfigurerAdapter - initial commit"
+   73  git push
+   74  git remote add SpringBoot_Security https://github.com/gwengopi/SpringBoot_Security.git
+   75  git push SpringBoot_Security
+   76  git push --set-upstream SpringBoot_Security spring_dev
+   77  git push --set-upstream SpringBoot_Security spring_dev
+   78  git branch
+   79  git checkout master
+   80  git merge master spring_dev
+   81  git push
+   82  git push --set-upstream SpringBoot_Security master
+   83  git checkout spring_dev
+   84  git status
+   85  git status
+   86  git add src/main/java/com/singtel/user/controller/UserLoginController.java src/main/java/com/singtel/user/controller/WebSecurityConfigurer.java
+   87  git commit -m "WebsecurityConfigureAdapter - configure method with antMatchers"
+   88  git push
+   89  git status
+   90  git add src/main/java/com/singtel/user/controller/WebSecurityConfigurer.java src/main/resources/application.properties
+   91  git commit -m "Add authorization logic to controller based on the role"
+   92  git push
+   93  git history
+   94  history
