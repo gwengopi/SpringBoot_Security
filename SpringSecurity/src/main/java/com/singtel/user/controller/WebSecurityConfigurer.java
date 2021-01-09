@@ -32,9 +32,12 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
 	  @Override 
 	  protected void configure(HttpSecurity http) throws Exception {
 	  
-	  http.authorizeRequests().antMatchers(HttpMethod.POST).hasAnyRole("USER")
+	  http.authorizeRequests()
+	  .antMatchers("/").permitAll()
+	  .antMatchers("/user/**").hasAnyRole("ADMIN")
 	  .antMatchers(HttpMethod.POST).hasRole("ADMIN")
-	  .antMatchers("/user").hasAnyRole("ADMIN"); 
+	  .and()
+	  .formLogin(); 
 	  
 	  }
 	  @Bean public PasswordEncoder getPasswordEncoder() { return
